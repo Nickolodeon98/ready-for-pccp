@@ -3,7 +3,7 @@ package greedy;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BiggestNum {
+public class P42883InProgress {
     public String bigNum(int length, List<Integer> unVisited, int idx, String soFar) {
         List<Integer> tempIdx = new ArrayList<>();
         List<Integer> tempMax = new ArrayList<>();
@@ -67,7 +67,7 @@ public class BiggestNum {
     }
 
     public static void main(String[] args) {
-        BiggestNum biggestNum = new BiggestNum();
+        P42883InProgress biggestNum = new P42883InProgress();
         int k = 4;
         String number = "4177252841";
 
