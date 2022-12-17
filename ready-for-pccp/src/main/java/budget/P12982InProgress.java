@@ -1,6 +1,8 @@
 package budget;
 
-public class P12982 {
+import java.util.Arrays;
+
+public class P12982InProgress {
     /* 각 부서에 따라 필요한 금액들 중 몇 개를 더해야 배정된 예산을 넘지 않으면서 지원하는 부서의 개수가 최대가 되는지 구한다.
     * 1. 완전 탐색으로 해본 결과, 완전 탐색으로는 풀 수 없다.*/
 
@@ -53,7 +55,7 @@ public class P12982 {
     }
 
     public static void main(String[] args) {
-        P12982 p12982 = new P12982();
+        P12982InProgress p12982 = new P12982InProgress();
         int[] d = {1,3,2,5,4};
         System.out.println(p12982.findEfficiency(d, 9));
     }

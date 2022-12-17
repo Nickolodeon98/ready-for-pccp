@@ -32,7 +32,7 @@ public class P12979InProgress {
         int idx = 0;
         for (int i = 0; i < onOrOff.length; i++) {
             idx = i;
-            while (!onOrOff[idx]) {
+            while (idx < N && !onOrOff[idx]) {
                 count++;
                 idx++;
             }
@@ -44,9 +44,10 @@ public class P12979InProgress {
         }
         System.out.println(numOfFs);
         int countMin = 0;
+
         for (int countF : numOfFs) {
             if (countF % ((W * 2) + 1) == 0) {
-                countMin += countF / (W * 2) + 1;
+                countMin += countF / ((W * 2) + 1);
                 continue;
             }
             countMin += (countF / ((W * 2) + 1)) + 1;
@@ -60,6 +61,6 @@ public class P12979InProgress {
     public static void main(String[] args) {
         int[] test = new int[300];
 //        P12979InProgress.onOrOff(test);
-        System.out.println(P12979InProgress.completeSpread(11, new int[]{4, 11}, 1));
+        System.out.println(P12979InProgress.completeSpread(16, new int[]{9}, 2));
     }
 }
