@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class P12979Final {
+public class P12979Final { // 2시간 50분 소요
     public int solution(int N, int[] stations, int W) {
         List<Integer> numOfFs = new ArrayList<>();
 
